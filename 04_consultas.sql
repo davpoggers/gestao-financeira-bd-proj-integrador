@@ -79,7 +79,7 @@ ORDER BY valor_total DESC;
 
 
 SELECT cp.id_conta_pagar,
-       f.razao_socia AS fornecedor,
+       f.razao_social AS fornecedor,
        cp.descricao,
        cp.data_vencimento,
        cp.valor_total AS valor_lancado,
@@ -146,4 +146,4 @@ FROM (
       WHERE data_recebimento BETWEEN @inicio AND @fim) AS total_recebido,
     (SELECT COALESCE(SUM(valor_pago), 0) FROM pagamento
       WHERE data_pagamento BETWEEN @inicio AND @fim)   AS total_pago
-);
+) t;
