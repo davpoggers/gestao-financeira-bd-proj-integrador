@@ -15,4 +15,8 @@
 |07\_testes.sql|Testes das Triggers e restrições|17|
 
 
+## DER (MySQL Workbench)
+<img src="DER workbench.png" height="450" width="800">
 
+## MER (Draw.io)
+<img src="MER.drawio.png" height="450" width="800">
